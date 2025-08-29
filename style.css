@@ -1,0 +1,83 @@
+* {
+    margin: 0; /* Margem */
+    padding: 0; /* Preenchimento */
+    box-sizing: border-box; 
+}
+body {
+    display: flex; /* Determina a natureza do elemento */
+    justify-content: center; /* Justificar o elemento */
+    align-items: center; /* Alinhar elemento */
+    height: 100vh; /* altura do elemento */
+    background-image: url("cinzafundo.jpg"); /* Fundo */
+    font-family: "Montserrat", sans-serif; /* Fonte usada */
+}
+.container-de-cards {
+    display: flex; 
+    justify-content: center;
+    gap: 20px; /* Espaçamento entre itens */
+    flex-wrap: wrap; /* Controlar itens flexiveis */
+}
+.card {
+    background-color: #fff; /* Cor do fundo */ 
+    width: 260px; /* Largura */
+    height: 320px; /* Altura */
+    border-radius: 12px; /* Borda */
+    box-shadow: 4px 4px 12px #aaaa; /* Sombras */
+    display: flex; 
+    flex-direction: column; /* Posição do iten (card) */
+}
+.card > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: flex-start;
+    height: 50%;
+    padding: 10px;
+}
+
+.container-valor-e-botao {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    width: 100%;
+    margin-top: auto;
+}
+
+.container-valor-e-botao span {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1873c3aa;
+    margin-bottom: 8px; 
+}
+.container-valor-e-botao button {
+    background-color: #1873c3aa;
+    height: 25px;
+    border: none;
+    padding: 4px;
+    width: 80%;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;  
+    border-radius: 11px;
+    cursor: pointer;
+}
+
+.card img {
+    width: 100%;
+    height: 130px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.card h1, .card h2, .card h3 {
+    padding: 0;
+    margin-bottom: 5px;
+}
+.card h3, .card h2 {
+    font-size: 15px;
+    color: #aaaa;
+    font-weight: 400;
+}
+.card h1 {
+    font-size: 16px;
+    font-weight: 600;
+}
