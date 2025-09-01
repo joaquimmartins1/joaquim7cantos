@@ -1,51 +1,36 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8"> <!-- Leitura padrão pro site-->
-    <title>Card - Devs Em Construção</title> <!-- Titulo do site -->
-    <link rel="stylesheet" href="style.css"> <!-- Linkagem do HTML pro CSS -->
+    <meta charset="UTF-8">
+    <title>Card - Devs Em Construção</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> <!-- Fonte das letras -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
-
     <div class="container-de-cards"> 
         <div class="card">
-            <img src="assets/imagem1.png" alt="Apartamento 1"> <!-- Imagem do card -->
-            <div>
-                <h1>Apartamento, Papicu, 2 Quartos</h1> <!-- Titulo principal do card -->
-                <h3>Fortaleza - CE / Rua Anderson</h3> <!-- Titulo segundario do card -->
-                <h2>2 quartos, 2 banheiros, 70m²</h2> <!-- Titulo tercriario do card -->
-                <div class="container-valor-e-botao"> <!-- Tag do botão e do valor do imovel -->
-                    <span>R$ 2.260,00</span> <!-- Valor do imovel -->
-                    <button>Agendar Visita</button> <!-- Botão de agendar visita -->
-                </div>
-            </div>
-        </div>
-        
-        <div class="card"> <!-- Segundo card -->
-            <img src="assets/imagem2.png" alt="Apartamento 2">
-            <div>
-                <h1>Apartamento, Meireles, 4 Quartos</h1>
-                <h3>Fortaleza - CE / Rua Lia</h3>
-                <h2>4 quartos, 4 banheiros, 95m²</h2>
+            <img src="assets/imagem1.png" alt="Apartamento 1">
+            <div class="card-content">
                 <div class="container-valor-e-botao">
-                    <span>R$ 5.800,00</span>
-                    <button>Agendar Visita</button>
+                    <span>R$ 2.260,00</span>
+                    <div class="coracao">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
                 </div>
+                <h1>Apartamento, Papicu, 2 Quartos</h1>
+                <h3>Fortaleza - CE / Rua Anderson</h3>
             </div>
-        </div>
-
-        <div class="card">
-            <img src="assets/imagem3.png" alt="Apartamento 3">
-            <div>
-                <h1>Apartamento, Aldeota, 2 Quartos</h1>
-                <h3>Fortaleza - CE / Pablo</h3>
-                <h2>2 quartos, 3 banheiros, 85m²</h2>
-                <div class="container-valor-e-botao">
-                    <span>R$ 3.800,00</span>
-                    <button>Agendar Visita</button>
+            <div class="card-info">
+                <div class="info-group">
+                    <i class="fa-solid fa-bed"></i>
+                    <h2>2 Quarto(s)</h2>
+                </div>
+                <div class="info-group">
+                    <i class="fa-solid fa-bath"></i>
+                    <h4>2 Banheiro(s)</h4>
                 </div>
             </div>
         </div>

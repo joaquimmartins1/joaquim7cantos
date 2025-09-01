@@ -1,83 +1,106 @@
 * {
-    margin: 0; /* Margem */
-    padding: 0; /* Preenchimento */
-    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
 body {
-    display: flex; /* Determina a natureza do elemento */
-    justify-content: center; /* Justificar o elemento */
-    align-items: center; /* Alinhar elemento */
-    height: 100vh; /* altura do elemento */
-    background-image: url("cinzafundo.jpg"); /* Fundo */
-    font-family: "Montserrat", sans-serif; /* Fonte usada */
-}
-.container-de-cards {
-    display: flex; 
+    display: flex;
     justify-content: center;
-    gap: 20px; /* Espaçamento entre itens */
-    flex-wrap: wrap; /* Controlar itens flexiveis */
+    align-items: center;
+    height: 100vh;
+    font-family: "Montserrat", sans-serif;
+    background-color: #f0f2f5; /* Adicionei uma cor de fundo para a página */
 }
+
+.container-de-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
 .card {
-    background-color: #fff; /* Cor do fundo */ 
-    width: 260px; /* Largura */
-    height: 320px; /* Altura */
-    border-radius: 12px; /* Borda */
-    box-shadow: 4px 4px 12px #aaaa; /* Sombras */
-    display: flex; 
-    flex-direction: column; /* Posição do iten (card) */
-}
-.card > div {
+    background-color: #fff;
+    width: 210px;
+    height: 270px; /* Aumentei a altura para acomodar o novo layout */
+    border-radius: 5px;
+    box-shadow: 2px 2px 8px #aaaaaa;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; 
-    align-items: flex-start;
-    height: 50%;
-    padding: 10px;
-}
-
-.container-valor-e-botao {
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    width: 100%;
-    margin-top: auto;
-}
-
-.container-valor-e-botao span {
-    font-size: 18px;
-    font-weight: 700;
-    color: #1873c3aa;
-    margin-bottom: 8px; 
-}
-.container-valor-e-botao button {
-    background-color: #1873c3aa;
-    height: 25px;
-    border: none;
-    padding: 4px;
-    width: 80%;
-    color: #fff;
-    font-size: 1rem;
-    font-weight: bold;  
-    border-radius: 11px;
-    cursor: pointer;
 }
 
 .card img {
     width: 100%;
     height: 130px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
 }
-.card h1, .card h2, .card h3 {
-    padding: 0;
-    margin-bottom: 5px;
+
+.card-content {
+    padding: 10px;
+    flex-grow: 1; /* Permite que o conteúdo se expanda */
 }
-.card h3, .card h2 {
-    font-size: 15px;
-    color: #aaaa;
-    font-weight: 400;
+
+.container-valor-e-botao {
+    display: flex;
+    justify-content: space-between; /* Alinha o valor à esquerda e o botão à direita */
+    align-items: center;
+    margin-bottom: 8px;
 }
+
+.container-valor-e-botao span {
+    font-size: 18px;
+    font-weight: 700;
+    color: #5c9fda;
+}
+
+.coracao i {
+    font-size: 20px;
+    color: #000000;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.coracao i:hover {
+    color: #ff0000;
+}
+
 .card h1 {
-    font-size: 16px;
+    font-size: 13px;
     font-weight: 600;
+    margin: 0;
+}
+
+.card h3 {
+    font-size: 10px;
+    color: #aaaaaa;
+    font-weight: 400;
+    margin: 5px 0 0;
+}
+
+.card-info {
+    display: flex;
+    justify-content: space-around; /* Distribui os grupos de informações uniformemente */
+    align-items: center;
+    padding: 10px;
+    border-top: 1px solid #eeeeee;
+}
+
+.info-group {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Espaço entre o ícone e o texto */
+}
+
+.info-group i {
+    color: #ff8c00; /* Cor dos ícones de quarto e banheiro */
+    font-size: 16px;
+}
+
+.info-group h2, .info-group h4 {
+    font-size: 10px;
+    font-weight: 500;
+    color: #555;
+    margin: 0;
 }
